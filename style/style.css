@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Boska';
+    src: url('../Boska_Complete/Fonts/TTF/Boska-Variable.ttf') format('truetype'); /* Adjust the path as needed */
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../Switzer_Complete/Fonts/Variable/Switzer-Variable.ttf') format('truetype'); /* Adjust the path as needed */
+}
+
+@font-face {
+    font-family: 'AvenirNext';
+    src: url('../') format('truetype'); /* Adjust the path as needed */
+}
+
+.boska {
+    font-family: 'Boska', sans-serif;
+}
+
+.switzer {
+    font-family: 'Switzer', sans-serif;
+}
+
+.avenir {
+    font-family: 'AvenirNext', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Poppins', sans-serif; /* Default font */
+}
+
+.navbar{
+    height: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 30px 0px;
+    z-index: 40;
+    
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+.navbar ul li:hover{
+    background-color: #75FF69;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+.navbar ul li a:hover{
+    color: #000;
+    font-size: 14px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.logo-container p{
+    color: #75FF69;
+    font-size: 28px;
+    font-weight: 400;
+}
+.banner-container{
+    background-image: url("../images/Hero\ \(2\).png");
+    height: 1000px;
+    width: 100%;
+    background-color: #1B3936;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.line-content{
+    position: absolute;
+}
+.line{
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    
+}
+.banner-img{
+    position: absolute;
+    z-index: 10;
+    
+}
+.banner-text{
+    position: absolute;
+    z-index: 20;
+    color: #FFF;
+    line-height: 162px;
+   
+    
+}
+.banner-title{
+    width: 1050px;
+    font-weight: 400;
+    text-align: center;
+    
+     
+}
+.first-part{
+    font-size: 262px;
+    font-style: italic;
+    line-height: 162px;
+    margin-bottom: 60px;
+    margin-left: -90px;
+    
+}
+.second-part{
+    font-size: 262px;
+    text-align: right;
+    color: #75FF69;
+    font-style: italic;
+    
+    
+}
+.small-part{
+    font-size: 32px;
+    /* margin-top: 20px; */
+    line-height: 42px;
+    padding-top: 40px;
+    
+}
+.last-part{
+    font-size: 262px;
+    
+    margin-left: 50px;
+    margin-bottom: 32px;
+}
+.banner-details{
+    font-size: 18px;
+    line-height: 24px;
+    width: 570px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 20;
+    
+}
+.stat-container{
+    display: flex;
+    justify-content: space-between;
+    height: 850px;
+    color: #1B3936;
+    margin: 180px 180px 0px;
+    z-index: 50;
+}
+
+.about-website p{
+    width: 650px;
+    margin-top: 40px;
+    font-size: 24px;
+    opacity: 0.8;
+    padding: 0px 20px;
+    color: #1B3936;
+}
+
+.stat-title{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+.stat{
+    font-size: 100px;
+    font-weight: 700;
+    
+}
+.dense-forest{
+  margin-bottom: 100px;
+}
+.living-space{
+  margin-bottom: 100px;
+}
