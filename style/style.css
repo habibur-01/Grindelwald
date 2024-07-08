@@ -110,14 +110,22 @@ body {
 }
 
 .line-content {
-    position: absolute;
+    position: relative;
+   
+
 }
 
 .line {
     width: 100%;
-    overflow: hidden;
-    z-index: 10;
+    /* height: 1000px; */
+    object-fit: contain;
 
+}
+
+.play-icon {
+    position: absolute;
+    top: 45%;
+    right: -3%;
 }
 
 .banner-img {
@@ -241,27 +249,32 @@ body {
     /* padding: 200px; */
     position: relative;
 }
-.imagebox-one{
+
+.imagebox-one {
     padding: 180px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
-.imagebox-two{
+
+.imagebox-two {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 240px;
     margin-right: 240px;
-    padding-bottom: 180px;
+    padding-bottom: 200px;
 }
-.image2{
+
+.image2 {
     margin-bottom: 60px;
 }
-.image4{
+
+.image4 {
     margin-top: 60px;
 }
-.about-us{
+
+.about-us {
     text-align: center;
     position: absolute;
     width: 100%;
@@ -269,10 +282,10 @@ body {
     top: 0%;
     bottom: 0%;
     margin-top: 16%;
-   
+
 }
 
-.about-details{
+.about-details {
     font-size: 68px;
     font-weight: 400;
     width: 1200px;
@@ -281,12 +294,175 @@ body {
     color: #FFF;
     text-transform: capitalize;
 }
-.about-title{
+
+.about-title {
     font-size: 32px;
     color: #75FF69;
     font-weight: 400;
     margin-bottom: 40px;
 }
-.text-opacity{
+
+.text-opacity {
     color: #678784;
+}
+
+.intersect {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.room-collection {
+    margin: 180px 0px;
+
+}
+
+.room-collection h1 {
+    font-size: 68px;
+    line-height: 88px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 180px;
+    text-transform: capitalize;
+
+}
+.cabin-container{
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.cabin {
+    position: relative;
+    width: 378px;
+    height: 505px;
+
+}
+
+.cabin img {
+    width: 100%;
+    height: 100%;
+}
+
+.cabin-name {
+    position: absolute;
+    bottom: 50px;
+    font-size: 32px;
+    color: #FFF;
+    text-align: center;
+    left: 36px;
+
+}
+
+.cabin-2 {
+    width: 582px;
+    height: 778px;
+    position: relative;
+
+}
+
+.cabin-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cabin-content {
+    position: absolute;
+    bottom: 60px;
+    left: 36px;
+}
+.cabin-details{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   width: 500px;
+}
+
+.cabin-details .arrow {
+    height: 48px;
+    width: 48px;
+}
+.cabin-details .arrow:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+
+.cabin-title {
+    font-size: 68px;
+    color: #FFF;
+}
+
+.about-cabin {
+    font-size: 18px;
+    color: #FFF;
+}
+.signup-container{
+    background-color: #1B3936;
+    padding: 100px 200px;
+}
+.bg-container{
+    width: 100%;
+    height: 705px;
+    color: #FFF;
+    position: relative;
+
+}
+.bg-container img{
+    width: 100%;
+    height: 100%;
+}
+.signup-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-header{
+    font-size: 68px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 88px;
+    
+}
+.offer-text{
+    color: #75FF69;
+}
+.signup-description{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+.input-field{
+    text-align: center;
+    height: 60px;
+    display: inline-flex;
+}
+.input-field input{
+    height: 60px;
+    width: 400px;
+    padding-left: 16px;
+    border: none;
+
+}
+::placeholder{
+    font-size: 18px;
+    color: #BBBBBB;
+}
+.input-field input:focus{
+    outline:none;
+}
+.submit-btn{
+    height: 60px;
+    padding: 10px;
+    width: 170px;
+    background-color: #75FF69;
+    font-size: 18px;
+    border: none;
 }
