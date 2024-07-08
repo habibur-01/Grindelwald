@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'AvenirNext';
-    src: url('../') format('truetype');
+    src: url('../Avenier/AvenirNextLTPro-Regular.otf') format('truetype');
     /* Adjust the path as needed */
 }
 
@@ -111,8 +111,8 @@ body {
 
 .line-content {
     position: relative;
-
-
+    height: 1000px;
+    margin-bottom: 120px;
 }
 
 .line {
@@ -124,7 +124,7 @@ body {
 
 .play-icon {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: -3%;
 }
 
@@ -486,22 +486,24 @@ body {
 
 .testimonial-container {
     background-color: #F9F9F9;
-    padding: 100px 180px;
+    padding: 100px 0px;
     color: #1B3936;
     opacity: 0.8;
 }
 
 .testimonial {
     position: relative;
-    width: 378px;
+    width: 500px;
     height: 477px;
+    text-align: right;
 }
 
 .testimonial img {
-    width: 100%;
-    width: 100%;
+    width: 378px;
+    height: 100%;
     overflow: hidden;
     object-fit: fill;
+    
 }
 
 .testimonial-details {
@@ -513,11 +515,25 @@ body {
     right: 20px;
     padding: 16px;
     box-shadow: 10px 5px 5px;
+    z-index: 20;
+    text-align: left;
+}
+
+.card-container {
+    max-width: 100%;
+    /* border: 1px solid black; */
+    width: 95%;
+    padding-left: 200px;
+   
 }
 
 .testimonial-cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 120px;
+    overflow-x: auto;
+    grid-template-columns: repeat(10, 1fr);
+    scrollbar-width: none;
+    
 }
 
 .testimonial-content {
@@ -525,6 +541,8 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 200px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .testimonial-header {
